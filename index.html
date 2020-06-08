@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Meditation App</title>
+</head>
+<body>
+    
+    
+    <!--Section for time selection-->
+
+    <div class="app">
+        <!--Default background video-->
+    <div class="vid-container">
+        <video loop>
+            <source src="./video/rain.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+        <div class="time-select">
+            <button data-time="120">2 Minutes</button>
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+            <button data-time="1200">20 Minutes</button>
+        </div>
+
+        <!--Section for player-->
+        <div class="player-container">
+            <audio class="song">
+                <source src="./sounds/rain.mp3" />
+            </audio>
+
+            <!--Player image-->
+            <img src="./svg/play.svg" alt="play" class="play" />
+
+            <!--svg for track outline-->
+            <svg
+                class="track-outline"
+                width="453" 
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <circle
+                    cx="226.5" 
+                    cy="226.5" 
+                    r="216.5" 
+                    stroke="white" 
+                    stroke-width="20"
+                />
+            </svg>
+
+            <!--svg for moving outline-->
+            <svg 
+                class="moving-outline"
+                width="453"
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <circle 
+                    cx="226.5" 
+                    cy="226.5" 
+                    r="216.5" 
+                    stroke="#018EBA" 
+                    stroke-width="20"
+                />
+            </svg>
+            <h3 class="time-display">0:00</h3>           
+        </div>
+
+        <!--Section for picking sound-->
+        <div class="sound-picker">
+            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
+                <img src="./svg/rain.svg" alt="rain" />
+            </button>
+            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+                <img src="./svg/beach.svg" alt="beach" />
+            </button>
+        </div>
+        
+    </div>
+    <footer class="footer">
+            
+        
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://codepen.io/sagirgarba"><i class="fa fa-codepen"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/Sager_Garba"><i class="fa fa-twitter"></i></a></li>  
+            <li class="social-list__item"><a class="social-list__link" href="https://www.freecodecamp.org/sagir%20garba%20isa"><i class="fa fa-free-code-camp"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/SagirGarba"><i class="fa fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/sagir-garba-b91b19179/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
